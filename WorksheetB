@@ -1,0 +1,31 @@
+Word Game Psuedocode
+
+Likeness : int
+PlayerInput : string
+ActualWord = House
+Guesses : int
+
+Print a list of words that includes the chosen word house and other similar words
+Print " guess my word"
+Split ActualWord into 5 separate strings with 1 string for each letter
+
+While Guesses <= 4
+Read PlayerInput
+Split PlayerInput into 5 seperate strings with 1 for each letter
+
+If string 1 of ActualWord == string 1 of PlayerInput
+    Likeness = likeness + 1
+If string 2 of ActualWord == String 2 of PlayerInput
+    Likeness = likeness + 1
+If string 3 of ActualWord == string 3 of playerInput 
+    Likeness = likeness + 1
+If string 4 of ActualWord == string 4 of playerinput
+    Likeness = likeness + 1
+If string 5 of ActualWord == string 5 of PlayerInput
+    Likeness = likeness + 1
+If Likeness == 5 
+    Print "Well done, you guessed my word!"
+    Guesses = 5
+Else 
+    Print " The word you chose had" + likeness + "similar letters to mine" 
+    Guesses = Guesses + 1
