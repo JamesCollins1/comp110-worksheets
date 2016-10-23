@@ -1,0 +1,25 @@
+a) The first algorithm performs the task of searching through a list and checking if there is any copies of data within that list.
+
+b) It is Quadratic because it has to search through the list to see if there is any copies of data in the list by comparing "i=0" to all other
+   possible entries within the list. It then moves on to "i=1" and does the same. It will do this for every entry in the list.
+
+c) The algorithm is still correct as it will check all the entries in the list up to the entry before "i". This means that it will check to 
+   see if there is any copies of the entry represented by "i" before that in the list it will find them. 
+
+d) The algorithm will run roughly twice as fast because it will only search through the names half as many times. This is because it won't 
+   search through the list when "i = 0" and will only search slot "0" when "i = 1" this means that instead of searching throught he list n 
+   squared times, it will search throught the list roughtly 1/2 n squared times.
+
+e) Yes it is still quadratic because if the list size is "n" and you increase the list by 1 then you will have to search through (n - 1) 
+   entries 1 more time.
+   
+f) The time Complexity for Python's built in Sort function is O(n log n). https://wiki.python.org/moin/TimeComplexity
+
+g) The time complexity is O(n) This is because you only add 1 more comparison for each entry you add to the list. so for 4 more additions 
+   it will only take 4 more searches. The O(n log n) is a constant.
+
+h) The algorithm that implements Python's sort function is would run faster if the list is large as it has to perform far fewer 
+   comparisons and must search through the lists far fewer times.
+
+i) There could be more important constraints for the code than time, for example there could be a limiting amount of memory available.
+
